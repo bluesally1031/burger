@@ -3,29 +3,15 @@
 
 <head>
     <title>EAT AT BOB'S BURGERS!</title>
+    
 </head>
 
 <body>
+    
     {{{body}}}
-    <script>
-        $(document).ready(function () {
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-            $(".devour-form”).on(“submit”, function (event) {
-                console.log("Anything")
-        event.preventDefault();
-
-            var burger_id = $(this).children(“.burger_id”).val();
-            console.log(burger_id);
-            $.ajax({
-                method: “PUT”,
-                url: “/ burgers /” + burger_id
-        }).then(function (data) {
-                //location.reload();
-                console.log(data);
-            });
-    })
-});
-    </script>
+    <script src="assets/js/ajax.js"></script>
 </body>
 
 </html>
